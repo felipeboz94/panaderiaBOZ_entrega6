@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head class = 'grid-area-head'>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="favicon" type="image/x-icon" href="img/favicon.jpeg">
+    <title>pH</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body class  = 'grid template-areas-index justify-align'  >
+
+    <!--Sección de navegación-->    
+    <nav id = 'grid-area-nav'>
+        <ul>
+            <li>
+                <a href="index.html">
+                    Inicio
+                </a>
+            </li>
+            <li>
+                <a href="pages/productos/productos.html">
+                    Productos
+                </a>
+            </li>
+            <li>
+                <a href="pages/pedidos/pedidos.html">
+                    Pedidos
+                </a>
+            </li>
+            <li>
+                <a href="pages/nosotros/nosotros.html">
+                    Nosotros
+                </a>
+            </li>
+            <li>
+                <a href="pages/contacto/contacto.html">
+                    Contacto
+                </a>
+            </li>
+        </ul>
+
+    </nav>
+
+    <!--Sección de header: logo que tiene vinculado al index-->
+    
+    <header id = 'grid-area-header'>
+        <a href="index.html">
+            <img src="img/ph.jpeg" alt="Logo de Proyecto Heráclito" >
+        </a>
+    </header>
+    <main id = 'grid-area-main'>
+        <!--Sección main: Inicio. Tiene contenido de la panadería dividido en articles dentro de una section-->
+        
+        <h1 class = 'titulo'>    
+            Inicio
+        </h1>
+        <section class = 'grid-section template-areas-main-index'>
+            <!--Artículo 1: Se divide en dos contenedores div: uno para el texto y otro para la imagen. Esto permitirá mejorar la performance de flexbox-->  
+            
+          <article class = 'padre-flex-index' id = 'grid-area-art1'>
+            <div class = ''> 
+                <h2>
+                    ¿QUÉ ES LA <strong>MASA MADRE</strong>?
+                </h2>
+                            
+                <p>
+                    Hasta hace dos siglos, que empezaron a estar disponibles comercialmente las levaduras más puras, prácticamente todo el pan se elaboraba con masa madre.
+                    La masa madre es un cultivo de simplemente harina, agua y tiempo. A esta mezcla fermentada, la usaremos a modo de “levadura” para hacer pan.
+                    Dentro de la masa madre encontramos múltiples microorganismos; siendo los más relevantes de este proceso, las <em>levaduras</em> y las <em>bacterias acido lácticas</em>. Estos logran entre sí, un equilibrio de convivencia, de manera que ambas poblaciones pueden sobrevivir y desarrollarse a la temperatura adecuada.
+                </p>
+
+                <p>
+                    Las levaduras (por ejemplo, <em>Saccharomyces Cerevisiae</em>) producen principalmente dióxido de carbono y alcohol.
+                </p>
+                <p>
+                    Las bacterias ácido lácticas (por ejemplo, <em>BAL Delbrueckii Bulgaricus </em> de forma cilíndrica alargada) le aportan acidez y otros aromas característicos [1].
+                </p>
+
+                <p>
+                    Esta combinación de microorganismos (microflora de una masa madre) es la que permitirá que el pan leve, tenga rico sabor, forme una miga aireada y una buena corteza [2].
+                    Justamente todo lo que buscamos en este tipo de panes y que son capaces de ver en al menos nuestras publicaciones.
+                </p>
+            </div> 
+            <div class = 'justify-div-img'>
+                <img src="img/microflora_masa_madre.PNG" alt="Microflora de la masa madre" >
+             </div >
+
+          </article>
+          
+          <!--Artículo 2: Se divide en dos contenedores div: uno para el texto y otro para la imagen. Esto permitirá mejorar la performance de flexbox-->  
+            
+
+          <article class = 'padre-flex-index padre-change-order' id = 'grid-area-art2'>
+              <div class = ''>
+                <h2>
+                    ¿POR QUÉ USAMOS MASA MADRE EN LUGAR DE LEVADURA INDUSTRIAL? ¿QUÉ DIFERENCIAS TIENEN?
+                </h2>
+                <p>
+                    Las levaduras industriales brindan algunas ventajas en cuanto a rapidez y uniformidad en la producción de pan, pero para garantizar estas ventajas se sacrifican otras virtudes positivas de las levaduras tradicionales de cultivos bacterianos mixtos como la masa madre [1].
+                    De todas formas en grandes panaderías, frecuentemente suelen combinar ambos fermentos donde se aprovechan las características de cada uno.  
+                </p>            
+                <p>
+                    La masa madre es un cultivo de microorganismos propios del ambiente: principalmente de la harina y el agua, elementos que la componen. Estos microorganismos son -entre los más relevantes- bacterias ácido lácticas y levaduras. Las primeras producen ácido láctico y las segundas, dióxido de carbono y alcohol [2].
+                </p>
+                <p>
+                    Al parecer, en la mayoría de las masas madre, las bacterias ácido lácticas son mucho más abundantes en número que las levaduras; y coexisten en forma de comunidad con mayor estabilidad a lo largo del tiempo. Esta es una diferencia fundamental con la levadura industrial, la cual se compone únicamente de una especie determinada de levadura (Saccharomyces cerevisiae). Además la variedad de bacterias y levaduras es tanto más abundante como las que haya en el medio, dónde el tiempo y la temperatura logran beneficiarlas.
+                    Estos microorganismos, en conjunto le brindan al pan la acidez y aroma típicos, muy diferentes de los que contienen levadura industrializada y que son también tan típicos de las panaderías tradicionales.
+                    Aunque no todos los tipos de pan necesitan ni tienen por qué beneficiarse de la presencia de una masa madre, su uso correcto acarrea importantes beneficios que se derivan de la maduración lenta y gradual que se produce durante la fermentación de aquella [3].
+                
+                </p>    
+            </div>
+            <div class = 'justify-div-img' >
+                <img src="img/masa_madre_1.PNG" alt="Tarro de masa madre">
+
+            </div>
+        </article>
+
+        <!--Artículo 3: Se divide en dos contenedores div: uno para el texto y otro para la imagen. Esto permitirá mejorar la performance de flexbox-->  
+          
+
+        <article class = 'padre-flex-index' id = 'grid-area-art3'>
+            <div class = ''>
+                <h2>
+                    ¿CUÁLES SON LOS BENEFICIOS DE UTILIZAR MASA MADRE? ¿Y LOS DE LA FERMENTACIÓN LARGA?
+                </h2>
+                <p>
+                    Los alimentos fermentados son muy nutritivos y fáciles de digerir. Mediante la fermentación se predigieren los alimentos (sustancias complejas se transforman en otras más simples), y esto aumenta la cantidad de sus nutrientes que podemos aprovechar; además, en muchos casos, se generan nutrientes y compuestos aromáticos adicionales o se eliminan antinutrientes (sustancias que inhiben la absorción de otras que son benéficas) o toxinas [1].
+                </p> 
+                <p> 
+                    Aunque no todos los tipos de pan necesitan ni tienen por qué beneficiarse de la presencia de una masa madre, su uso correcto acarrea importantes beneficios que se derivan de la maduración lenta y gradual que se produce durante la fermentación de aquella, que por lo general dura entre 6 y 18 hs. [3].
+                </p>
+                <p>
+                    Los más relevantes son:
+                </p>
+                <ol>
+                    <li>
+                        La predigestión de los nutrientes, que adquieren formas más accesibles y biodisponibles, como se mencionó anteriormente.
+                    </li>
+                    <li>
+                        La estructura de la masa se refuerza: una característica de los fermentos es el desarrollo de acidez, producto del ácido láctico generado en la fermentación, y esa acidez le otorga tenacidad a la estructura de gluten.
+                    </li>
+                    <li>
+                        Mejora la duración del pan: según baja el pH del pan (aumenta su acidez), se produce un aumento proporcional en su capacidad de permanecer fresco.
+                    </li>
+                    <li>
+                        Los panes consiguen un sabor superior: suelen poseer un sutil aroma a trigo o robusto sabor a centeno, según el caso, un toque ácido y un regusto prolongado [3].
+                    </li>
+                </ol>
+            </div>
+            <div class = 'justify-div-img'>
+                <img src="img/masa_madre_2.PNG" alt="Tarro de masa madre">
+            </div>
+        </article>
+        
+        <!--Artículo 4: Se divide en dos contenedores div: uno para el texto y otro para la imagen. Esto permitirá mejorar la performance de flexbox-->  
+          
+
+          <article  class = 'padre-flex-index padre-change-order' id = 'grid-area-art4'>
+            <div class = ''>
+                
+                <h2>
+                    PORCENTAJE PANADERO: EL PORCENTAJE QUE NO SUMA 100
+                </h2>
+                <p>
+                    Si se han detenido a leer las tarjetas de nuestros panes, quizás observaron que en la descripción de los ingredientes que lo componen, la suma total de los porcentajes de cada uno no es 100. Pero, ¿cómo? (Quédense tranquilos que nuestra calculadora funciona bien)
+                    Así es, estos porcentajes no suman 100, y está bien así.
+                </p>
+                <p>
+                    Están expresados en lo que en panadería se conoce como <strong>porcentaje panadero</strong>. Y a continuación les vamos a contar de qué se trata así pueden entender nuestras etiquetas.
+                    El peso total de la harina a utilizar constituye el valor de referencia de la receta del cual dependen todos los otros ingredientes. Eso quiere decir que desde ahora se transforma en el 100% y los demás elementos varían y están determinados en función de él.
+                    En otras palabras, cada ingrediente de la fórmula se expresa como un porcentaje del peso de la harina (no del total), y el peso de la harina siempre se expresa como el 100%.
+                    Por ejemplo, 500 g de harina es el 100%. Si la receta indica “agua 70%”, quiere decir que el peso del agua de esa receta es el 70% del peso de la harina, en este caso 500 g x 0,7 = 350 g de agua [2].
+                </p>
+                <p>
+                    Las ventajas del uso de este porcentaje se pueden resumir en los siguientes puntos:
+                </p>
+                <ol>
+                    <li>
+                        Los porcentajes son fáciles de recordar, y por lo tanto también las recetas.
+                    </li>
+                    <li>
+                        Permite comparar las diversas harinas disponibles en el mercado en base a sus características (fuerza, absorción de agua, etcétera).
+                    </li>
+                    <li>
+                        Si se necesita variar la cantidad de masa total, ajustando la cantidad de harina, sale de forma directa cuánto del resto de los ingredientes deben utilizarse.
+                    </li>
+                    <li>
+                        Permite modificar el porcentaje de alguno de los ingredientes independientemente del de los otros, sin ser necesario recalcular todos los porcentajes.
+                    </li>
+                </ol>
+            </div>
+            
+            <div class = 'justify-div-img'>
+                <img src="img/balanza.PNG" alt="Porcentaje panadero">
+            </div>
+        </article>
+        </section>
+        <!--Sección de bibliografía-->  
+
+        <section>
+            <article class=>
+                <div class = 'padre-flex-index'>
+                    <h2>Bibliografía</h2>
+                    <ul>
+                        <li>
+                            [1] “El arte de la fermentación” – Sandor Katz
+                        </li>
+                        <li>
+                            [2] “Masa madre” – Ramón Garriga, Mariana Koppmann
+                        </li>
+                        <li>
+                            [3] “El Pan” – Jefrey Hamelman
+                
+                        </li>
+                    </ul>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <!--Termina el main y arranca el footer con las redes-->  
+
+
+    <footer class = 'padre-flex-index' id = 'grid-area-footer'>
+    <h2> Nuestras redes </h2>
+    
+    <a href="https://www.instagram.com/proyecto.heraclito/" target = "_blank"> <img src="img/instagram.png" alt="Instagram Proyecto heráclito"></a>
+    </footer>
+    
+</body>
+</html>

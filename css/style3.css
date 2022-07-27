@@ -1,0 +1,293 @@
+/*
+Paleta de colores obtenida en Adobe Color:
+Color Theme Swatches in RGBA 
+.color-theme_Denver-Bild-Edit-1-rgba { color: rgba(88, 88, 89, 1); }
+.color-theme_Denver-Bild-Edit-2-rgba { color: rgba(242, 213, 187, 1); }
+.color-theme_Denver-Bild-Edit-3-rgba { color: rgba(191, 174, 159, 1); }
+.color-theme_Denver-Bild-Edit-4-rgba { color: rgba(13, 12, 12, 1); }
+.color-theme_Denver-Bild-Edit-5-rgba { color: rgba(242, 242, 242, 1); }
+
+El color del header es rgba(221,222,224)
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Quintessential&family=Roboto:wght@300&display=swap');
+
+*{ /* limpieza de padding y margin default: 'reset'*/
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+header a img{
+    width: 100%;
+}
+body{
+    background-color: rgba(242, 242, 242, 1);
+    line-height: 1.6rem;
+    font-size: 1.6rem;
+    width :100%;  
+}
+
+nav{
+	background-color: rgb(221,222,224, 1);
+    padding: 6px 20px;
+    position: sticky;
+    top:0;
+    left: 0;
+    z-index: 15;
+	}
+	nav ul{
+        display: inline-block;
+	}
+
+    nav ul li{
+        list-style: none;
+        display: inline-block;
+        padding: 6px;
+    }
+
+		nav ul li a{
+			color:rgba(13, 12, 12, 1);
+            font-weight: 600;
+            font-size: 1.8rem;
+            
+		}
+
+		nav ul li a:hover{
+			color: rgba(191, 174, 159, 1);
+			font-weight: 700;
+            font-size: 1.8rem;
+		}
+
+
+        main section article {
+            background-color: rgba(242, 213, 187, 0.5);
+            font-size: 1.6rem;
+            color:  rgba(88, 88, 89, 1);
+            padding: 15px;
+            margin: 15px;
+
+        }
+            main section div h2 {
+                font-size: 2.0;
+                line-height: 1.4;
+            }
+            
+            main section article div{
+                line-height: 2.0rem;
+                margin: 10px;
+                overflow: auto;
+                width: 100%;
+            }
+            main section article div img {
+                width: 80%;
+            }
+
+
+
+        footer {
+            background-color: rgb(221,222,224, 1);
+            color: rgba(88, 88, 89, 1);
+            padding: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+            footer h2 {
+            line-height: 3.0rem;
+            
+            }
+
+            footer a img {
+                width: 5.0rem;
+            }
+
+/* FIN ETIQUETAS */
+
+/* INICIO CLASES*/
+
+.titulo {
+    color: rgba(13, 12, 12, 1);
+    line-height: 5.0rem;
+    font-size:4.0rem;
+    text-align: center;
+    margin: 15px;
+    padding: 15px;
+    }
+
+    
+.justify-div-img{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.width100{
+    width: 100%;
+}
+/* FIN CLASES*/
+
+/* INICIO IDS*/
+
+/* FIN ID*/
+
+/* COMIENZA EL FORMATO DE GRID DEL INDEX CON CLASES Y ID*/
+
+.grid{
+    width: 99%;
+    display: grid;
+}
+
+.template-areas-index{
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto auto auto;
+    
+    grid-template-areas: 
+        "nav nav nav"
+        "header header header"
+        "main main main"
+        "footer footer footer";
+    
+}
+
+
+#grid-area-nav{
+    grid-area: nav;
+    
+}
+
+#grid-area-header{
+    grid-area: header;
+}
+
+#grid-area-main{
+    grid-area:main;
+}
+
+#grid-area-footer{
+    grid-area:footer;
+}
+
+/* FIN EL FORMATO DE GRID DEL INDEX*/
+
+/* COMIENZA EL FORMATO DE GRID DE LA SECCIÓN CON LOS ARTÍCULOS*/
+
+.grid-section{
+    width: 100%;
+    display: grid;
+}
+
+.template-areas-main-index{
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto auto auto;
+    
+    grid-template-areas: 
+        "art1 art1 art1"
+        "art2 art2 art2"
+        "art3 art3 art3"
+        "art4 art4 art4";
+    
+}
+
+.template-areas-main-productos{
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto auto auto auto auto ;
+    grid-template-areas: 
+        "art1"
+        "art2"
+        "art3"
+        "art4"
+        "art5";
+    
+}
+
+#grid-area-art1{
+    grid-area: art1;
+    
+}
+
+#grid-area-art2{
+    grid-area: art2;
+}
+
+#grid-area-art3{
+    grid-area:art3;
+}
+
+#grid-area-art4{
+    grid-area:art4;
+}
+
+#grid-area-art5{
+    grid-area:art5;
+}
+
+/* FIN EL FORMATO DE GRID DE LA SECCIÓN CON LOS ARTÍCULOS*/
+
+
+/* INICIO DEL FORMATO DE FLEX PARA DENTRO DE LOS ARTÍCULOS CON LAS DIV*/
+.padre-flex-index {
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-around; /* predeterminado */
+}
+
+.padre-flex-productos {
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-around; /* predeterminado */
+}
+
+
+/* ======== media queries ======== */
+@media (min-width: 768px){
+
+    .template-areas-main-productos{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto auto auto;
+        grid-template-areas: 
+            "art1 art2"
+            "art3 art4"
+            "art5 art5";
+        
+    }
+
+}
+
+/* min-width: 1024px defino 2 cols con medidas vwy 2 rows*/
+@media (min-width: 1024px){
+
+    .padre-flex-index {
+        flex-direction: row;
+        justify-content: space-around;
+        align-content:space-around;
+    }
+    main section article div{
+        width: 50%;
+    }
+    .padre-change-order{
+        flex-direction: row-reverse;
+    }
+
+    .template-areas-main-productos{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto auto;
+        grid-template-areas: 
+            "art1 art2 art3 art4"
+            "art5 art5 art5 art5";
+        
+    }
+}
+
+/* min-width: 1200px cambio la dirección de la gale de productos a row*/
+@media (min-width: 1200px){
+	
+    main section article:hover{
+        margin: 45px;
+        transition: 1s;
+    }
+}

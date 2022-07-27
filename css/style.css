@@ -1,0 +1,163 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Quintessential&family=Roboto:wght@300&display=swap");
+body {
+  background-color: rgb(242, 242, 242);
+  line-height: 1.6rem;
+  font-size: 1.6rem;
+  width: 100%;
+}
+body header a img {
+  width: 100%;
+}
+body main section article {
+  background-color: rgba(242, 213, 187, 0.5);
+  font-size: 1.6rem;
+  color: rgb(88, 88, 89);
+  padding: 15px;
+  margin: 15px;
+}
+body main section article div {
+  line-height: 2rem;
+  margin: 10px;
+  overflow: auto;
+  width: 100%;
+}
+body main section article div img {
+  width: 80%;
+}
+body main section div h2 {
+  font-size: 1.8rem;
+  line-height: 1.4;
+}
+body footer {
+  background-color: rgb(221, 222, 224);
+  color: rgb(88, 88, 89);
+  padding: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body footer h2 {
+  line-height: 2rem;
+}
+body footer a img {
+  width: 5rem;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.titulo {
+  color: rgb(13, 12, 12);
+  line-height: 5rem;
+  font-size: 4rem;
+  text-align: center;
+  margin: 15px;
+  padding: 15px;
+}
+
+.justify-div-img {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.width100 {
+  width: 100%;
+}
+
+/* INICIO DEL FORMATO DE FLEX PARA DENTRO DE LOS ARTÍCULOS CON LAS DIV*/
+.padre-flex-index {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; /* predeterminado */
+}
+
+.padre-flex-productos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; /* predeterminado */
+}
+
+.grid {
+  width: 99%;
+  display: grid;
+}
+
+.template-areas-index {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas: "nav nav nav" "header header header" "main main main" "footer footer footer";
+}
+
+#grid-area-nav {
+  grid-area: nav;
+}
+
+#grid-area-header {
+  grid-area: header;
+}
+
+#grid-area-main {
+  grid-area: main;
+}
+
+#grid-area-footer {
+  grid-area: footer;
+}
+
+/* min-width: 1024px defino 2 cols con medidas vwy 2 rows*/
+@media (min-width: 1024px) {
+  .padre-flex-index {
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: space-around;
+  }
+  main section article div {
+    width: 50%;
+  }
+  .padre-change-order {
+    flex-direction: row-reverse;
+  }
+}
+@media (min-width: 1200px) {
+  main section article:hover {
+    margin: 45px;
+    transition: 1s;
+  }
+}
+nav {
+  background-color: rgb(221, 222, 224);
+  padding: 6px 20px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 15;
+}
+nav ul {
+  display: inline-block;
+}
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 6px;
+}
+nav ul li a {
+  color: rgb(13, 12, 12);
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+nav ul li a:hover {
+  color: rgb(191, 174, 159);
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+/*# sourceMappingURL=style.css.map */

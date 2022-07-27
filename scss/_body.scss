@@ -1,0 +1,62 @@
+//body
+body{
+    background-color: $color_5;
+    line-height: $lHeight_1;
+    font-size: $fSize_3;
+    width: $w-100;
+    header{
+        a{
+            img{
+                width:$w-100;
+            }
+        }
+    }
+
+    main{
+        section{
+            article{
+                background-color: $color_2;
+                font-size: $fSize_3;
+                color: $color_1;
+                padding:15px;
+                margin:15px;
+                div{
+                    line-height: $lHeight_0;
+                    margin:10px;
+                    overflow:auto;
+                    width:$w-100;
+                    img{
+                        width: $w-80;
+
+                    }
+                }
+
+            }
+            div{
+                h2{
+                    font-size: $fSize_2;
+                    line-height: $lHeight_2;
+                }
+            }
+        }
+    }
+    footer{
+        background-color: $color_6;
+        color:  $color_1;
+        padding: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h2{
+            line-height: $lHeight_0;
+        }
+        a{
+            img{
+                width: 5.0rem;
+            }
+        }
+    }
+}
+
+
+

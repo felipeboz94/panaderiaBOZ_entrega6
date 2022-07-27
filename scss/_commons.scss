@@ -1,0 +1,126 @@
+//commons
+
+
+*{
+    font-family: $font_1;
+    padding: 0;
+    margin:0;
+}
+
+html{
+    font-size:$fSize_General;
+}
+
+//Clases comunes
+
+.titulo {
+    color: $color_4;
+    line-height: $lHeight_5;
+    font-size:4.0rem;
+    text-align: center;
+    margin: 15px;
+    padding: 15px;
+    }
+
+    
+.justify-div-img{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.width100{
+    width: $w-100;
+}
+
+/* INICIO DEL FORMATO DE FLEX PARA DENTRO DE LOS ARTÍCULOS CON LAS DIV*/
+.padre-flex-index {
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-around; /* predeterminado */
+}
+
+.padre-flex-productos {
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-around; /* predeterminado */
+}
+
+//CLASES DEL GRID DEL INDEX
+.grid{
+    width: $w-99;
+    display: grid;
+}
+
+.template-areas-index{
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto auto auto;
+    
+    grid-template-areas: 
+        "nav nav nav"
+        "header header header"
+        "main main main"
+        "footer footer footer";
+    
+}
+//Fin de clases
+
+//Inicio de IDs
+//IDs DEL GRID DEL INDEX
+#grid-area-nav{
+    grid-area: nav;
+    
+}
+
+#grid-area-header{
+    grid-area: header;
+}
+
+#grid-area-main{
+    grid-area:main;
+}
+
+#grid-area-footer{
+    grid-area:footer;
+}
+
+//Fin de IDs
+
+//Media queries
+
+/* min-width: 1024px defino 2 cols con medidas vwy 2 rows*/
+@media (min-width: 1024px){
+
+    .padre-flex-index {
+        flex-direction: row;
+        justify-content: space-around;
+        align-content:space-around;
+    }
+    main{
+        section{
+            article{
+                div{
+                    width: $w-50;
+                }
+            }
+        }
+    }
+    .padre-change-order{
+        flex-direction: row-reverse;
+    }
+
+}
+
+@media (min-width: 1200px){
+	
+    main{
+        section{
+            article{
+                &:hover{
+                    margin: 45px;
+                    transition: 1s
+                }
+            }
+        }
+    }
+}

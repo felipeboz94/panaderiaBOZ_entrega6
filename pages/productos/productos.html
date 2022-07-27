@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pH</title>
+    <link rel="favicon" type="image/x-icon" href="img/favicon.jpeg">
+    <link rel="stylesheet" href="../../css/style3.css">
+</head>
+<body class  = 'grid template-areas-index justify-align'  >
+    <!--Sección de navegación-->  
+    <nav id = 'grid-area-nav'>
+        <ul>
+            <li>
+                <a href="../../index.html">
+                    Inicio
+                </a>
+            </li>
+            <li>
+                <a href="productos.html">
+                    Productos
+                </a>
+            </li>
+            <li>
+                <a href="../pedidos/pedidos.html">
+                    Pedidos
+                </a>
+            </li>
+            <li>
+                <a href="../nosotros/nosotros.html">
+                    Nosotros
+                </a>
+            </li>
+            <li>
+                <a href="../contacto/contacto.html">
+                    Contacto
+                </a>
+            </li>
+        </ul>
+
+    </nav>
+
+    <!--Sección de header: logo que tiene vinculado al index-->
+     
+    <header id = 'grid-area-header'>
+        <a href="../../index.html">
+            <img src="../../img/ph.jpeg" alt="Logo de Proyecto Heráclito">
+        </a>    
+    </header>
+
+    <main id = 'grid-area-main'>
+        <!--Sección main: Productos. Tiene contenido de la panadería de los productos en articles dentro de una section-->
+         
+        <h1 class = 'titulo'>    
+            Productos
+        </h1>
+        <!--Sección de panes-->
+        <section class = 'grid-section template-areas-main-productos'>
+            <!--Artículo 1: Se divide en dos contenedores div: uno para el texto y otro para la imagen. Esto permitirá mejorar la performance de flexbox-->  
+             
+            <article class = 'padre-flex-productos' id = 'grid-area-art1'>
+                <div class = 'width100'>
+                    <h2>
+                        HOGAZA RÚSTICA TRADICIONAL
+                    </h2>
+                    <ul>
+                        <li>
+                            Harina de trigo integral
+                        </li>
+                        <li>
+                            Harina de trigo 000
+                        </li>
+                        <li>
+                            Agua 
+                        </li>
+                        <li>
+                            Sal
+                        </li>
+                    </ul>   
+                    <p>
+                        Peso: 1 kg.
+                    </p>
+                    <p>
+                        Gran esponjosidad aportada por la harina 000, y acidez por la harina integral.
+                    </p>
+                    <p>
+                        Masa madre elaborada a partir de harina integral
+                    </p>
+                </div>
+                <div class = 'justify-div-img width100'>
+                    <img src="../../img/hogaza_tradicional.PNG" alt="Hogaza tradicional de masa madre">           
+                </div>
+            </article>
+            <!--Artículo 2: Se divide en dos contenedores div: uno para el texto y otro para la imagen. Esto permitirá mejorar la performance de flexbox-->  
+            
+            <article class = 'padre-flex-productos' id = 'grid-area-art2'>
+                <div class = 'width100'>
+                    <h2>
+                        HOGAZA 100% INTEGRAL Y MIX DE SEMILLAS
+                    </h2>
+                    <ul>
+                        <li>
+                            Harina de trigo integral
+                        </li>
+                        <li>
+                            Semillas de girasol
+                        </li>
+                        <li>
+                            Semillas de zapallo
+                        </li>
+                        <li>
+                            Semillas de lino
+                        </li>
+                        <li>
+                            Semillas de chía
+                        </li>
+
+                        <li>
+                            Agua 
+                        </li>
+                        <li>
+                            Sal
+                        </li>
+                    </ul>    
+                    <p>
+                        Peso: 1 kg.
+                    </p>
+                    <p>
+                        La harina integral le aporta acidez y densidad. La gran cantidad de semillas le aportan gran cantidad de nutrientes, sabor y texturas.
+                    </p>
+                    <p>
+                        Masa madre elaborada a partir de harina integral
+                    </p>
+                </div>
+                <div class = 'justify-div-img width100'>
+                    <img src="../../img/hogaza_semillas.PNG" alt="Hogaza integral de masa madre con mix de semillas">           
+                </div>
+            </article>
+            <!--Artículo 3: Se divide en dos contenedores div: uno para el texto y otro para la imagen. Esto permitirá mejorar la performance de flexbox-->  
+                
+            <article class = 'padre-flex-productos' id = 'grid-area-art3'>
+                <div class = 'width100'>
+                    <h2>
+                        PAN DE MOLDE 100% CENTENO Y MIEL
+                    </h2>
+                    <ul>
+                        <li>
+                            Harina de centeno
+                        </li>
+                        <li>
+                            Miel
+                        </li>
+
+                        <li>
+                            Agua 
+                        </li>
+                        <li>
+                            Sal
+                        </li>
+                    </ul>    
+                    <p>
+                        Peso: 1 kg.
+                    </p>
+                    <p>
+                        El centeno y la miel aportan el sabor dulce y denso, y a su vez la gran hidratación le da una humedad muy característica.
+                    </p>
+                    <p>
+                        La masa madre es de harina de centeno.
+                    </p>
+                </div>
+                <div class = 'justify-div-img width100' >  
+                    <img src="../../img/molde_centeno.PNG" alt="Pan de molde de centeno">  
+                </div>
+            </article>
+            <!--Artículo 4: Se divide en dos contenedores div: uno para el texto y otro para la imagen. Esto permitirá mejorar la performance de flexbox-->  
+    
+            <article class = 'padre-flex-productos' id = 'grid-area-art4'>
+                <div class = 'width100'>
+                    <h2>
+                        PAN DE MOLDE DE INTEGRAL, CENTENO Y FRUTOS SECOS
+                    </h2>
+                    <ul>
+                        <li>
+                            Harina de centeno
+                        </li>
+                        <li>
+                            Harina de centeno
+                        </li>
+                        <li>
+                            Pasas de uva negras
+                        </li>
+                        <li>
+                            Pasas de uva rubias
+                        </li>
+                        <li>
+                            Nueces
+                        </li>
+                        <li>
+                            Maníes
+                        </li>
+                        <li>
+                            Castañas de cajú
+                        </li>
+                        <li>
+                            Almendras
+                        </li>
+                        <li>
+                            Agua 
+                        </li>
+                        <li>
+                            Sal
+                        </li>
+                    </ul> 
+                    <p>
+                        Peso: 1 kg.
+                    </p>
+                    <p>
+                        La harina integral le aporta gran acidez y densidad. El centeno aporta su sabor dulce y los frutos secos tropezones crocantes y nutrientes muy importantes. Las pasas de uva contrarrestan la acidez del pan.
+                    </p>
+                    <p>
+                        La masa madre es de harina de integral.
+                    </p>
+                </div>
+                <div class = 'justify-div-img width100' >
+                    <img src="../../img/molde_frutos_secos.PNG" alt="Pan de molde integral, centeno y frutos secos">  
+                </div>
+            </article>
+        <!--Artículo 4: Se divide en dos contenedores div: uno para el texto y otro para la imagen. Esto permitirá mejorar la performance de flexbox-->  
+        
+
+        </section >
+        <!--Sección de pizzas-->
+
+        <section >
+            <article class = 'padre-flex-index' id = 'grid-area-art5'>
+                <!--Artículo 1: Se divide en dos contenedores div: uno para el texto y otro para la imagen. Esto permitirá mejorar la performance de flexbox-->  
+    
+                <div class ='width100'>
+                    <h2>
+                        PRE-PIZZAS DE MASA MADRE
+                    </h2>
+                    <ul>
+                        <li>
+                            Harina de trigo 000
+                        </li>
+                        <li>
+                            Agua
+                        </li>
+                        <li>
+                            Sal
+                        </li>
+                    </ul>
+                    <p>
+                        Tienen un diámetro aproximado de 24 cm, pero viene cargada del sabor y aroma característico de una masa madre de harina de trigo 000, priorizando mucho aire en los bordes (como bien se le dice en Italia el "cornicione") y una base delgada.
+                    </p>
+                    <p>
+                        La fermentación en frío por más de doce horas trae los beneficios que se han hablado en publicaciones anteriores y le da una crocantez que no se ve en las prepizzas usuales.
+                    </p>
+                    <p>La masa madre es de harina de trigo 000, y se usa un pequeño porcentaje de levadura instantánea.</p>
+                </div>
+                <div class = 'justify-div-img width100' >
+                    <img src="../../img/pizza.PNG" alt="Prepizza de masa madre">
+                </div>
+            </article>
+        </section>
+        
+    </main>
+    <!--Termina el main y arranca el footer con las redes-->  
+
+    <footer class = 'padre-flex-productos' id = 'grid-area-footer'>
+        <h2> Nuestras redes </h2>
+        <a href="https://www.instagram.com/proyecto.heraclito/" target = "_blank"> <img src="../../img/instagram.png" alt="Instagram Proyecto heráclito"></a>
+    </footer>
+    
+</body>
+</html>
